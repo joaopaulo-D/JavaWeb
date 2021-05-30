@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+	  xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<h:outputStylesheet library="css" name="style.css"/>
+	<title>Insert title here</title>
+</h:head>
+<h:body>
+	<p:layout fullPage="true">
+		<p:layoutUnit position="north" size="130" header="Topo do Layout">
+			<header>
+				<div style="float: left; margin-left: 10px">
+					<h1>primeFaces e JSF</h1>
+				</div>
+				<div style="float: right;">
+					<h:graphicImage library="imagem" name="logo.jpg"/>
+				</div>
+			</header>
+		</p:layoutUnit>
+
+		<p:layoutUnit position="west" header="Menu Lateral" resizable="true" collapsible="true" size="230">
+			<h:form>
+				<p:menu style="width: 100%;">
+					<p:menuitem value="Cadastro"/>
+					<p:menuitem value="Consulta"/>
+					<p:menuitem value="Saida"/>
+				</p:menu>
+			</h:form>
+		</p:layoutUnit>
+		<p:layoutUnit position="" ></p:layoutUnit>
+	</p:layout>
+	
+</h:body>
+</html>
